@@ -18,9 +18,10 @@ services:
     image: php:fpm
     volumes: 
       - ./code:/code
+      - ./log/php:/var/log/php-fpm.log
     networks: 
       - pndocker
 
 networks: 
   pndocker:
-    driver: pndocker-custom
+    external: true
