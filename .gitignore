@@ -1,4 +1,6 @@
 code/
 log/
+
+.DS_Store
 .idea
 .vscode
