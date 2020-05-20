@@ -20,7 +20,7 @@ services:
     volumes: 
       - ./code:/code
       - ./conf/php/php.ini:/usr/local/etc/php/php.ini
-      - ./log/php:/var/log/php-fpm.log
+      - ./log/php/php-fpm.log:/var/log/php-fpm.log
     networks: 
       - pndocker
 
